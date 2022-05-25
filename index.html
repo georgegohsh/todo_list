@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b958678a42.js" crossorigin="anonymous"></script>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="settings-inner-modal"></div>
+        <div class="settings-inner-container">
+            <div class="settings-inner-container--box">
+                <div class="close-inner-modal-container">
+
+                    <i class="fas fa-times"></i>
+                </div>
+                <h2 id="smallModalHeader">Header <span class="highlight">Name</span>.</h2>
+                <p id="smallModalP1">Your current username is User.</p>
+                <p id="smallModalP2">You can update your username below:</p>
+                <input id="smallModalInput" type="text" placeholder="Placeholder Text" autocomplete="off">
+                <div class="button-container">
+                    <button class="btn modal-cancel-btn">Cancel</button>
+                    <button id="smallModalBtnMain" class="btn btn-primary">Change</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Navigation Bar -->
+    <nav class="nav">
+        <a>
+        <div class="icon">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        </a>
+
+        <a>
+        <div id="calender" class="icon">
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+        </div>
+        </a>
+
+        <a>
+        <div id="settingsBtn" class="icon">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        </a>
+
+        <a>
+        <div id="calendar" class="icon">
+            <i class="fa-solid fa-calendar"></i>
+        </div>
+        </a>
+
+        
+    </nav>
+
+
+    <div class="input-container">
+        <div class="entry">
+            <h2 class="header">To-Do List</h2>
+            <input class="input" id="input" type="text" placeholder="Add an entry...">
+            <button class="addBtn" id="addBtn">Add <i class="fas fa-plus"></i></button>
+        </div>
+
+
+        <div class="empty-list-display">
+            <p>Looks like your to-do list is currently empty!</p>
+        </div>
+        <div class="list-item-container">
+            <!-- Filter Items (Large Screens) -->
+            <div class="filter-items filter-items-main">
+                <div id="toggleOrderBtn" class="filter-box filter-box--icon filter--toggle-order">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <div id="toggleAllBtn" class="filter-box filter-box--small filter--show-all filter-active">
+                    <p>All</p>
+                </div>
+                <div id="toggleCompleteBtn" class="filter-box filter-box--text filter--show-complete">
+                    <p>Complete</p>
+                </div>
+                <div id="toggleIncompleteBtn" class="filter-box filter-box--text filter--show-incomplete">
+                    <p>Incomplete</p>
+                </div>
+                <div id="togglePrioritisedBtn" class="filter-box filter-box--icon filter--show-prioritised">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>   
+        <div class="to-do-item-container">
+
+        </div>
+
+        <div class="calendar">
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+
+
+
+
+
+
